@@ -1,0 +1,25 @@
+{
+    "name": "Take an Ergo Break",
+    "description": "Asks users to take a break every so often to avoid muscle strains",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["./main.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+
+    // "permissions": ["alarms", "notifications", "storage"],
+    // "background": {
+    //   "service_worker": "background.js"
+    // },
+    // "action": {
+    //   "default_title": "Drink Water Event",
+    //   "default_popup": "popup.html"
+    // },
+    // "icons": {
+    //   "16": "drink_water16.png",
+    // }
+  }
